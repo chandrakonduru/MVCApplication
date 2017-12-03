@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>MVCApplication</display-name>
+  <servlet>
+		<display-name>LoginServlet</display-name>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.javawebtutor.controller.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<display-name>AdminLoginServlet</display-name>
+		<servlet-name>AdminLoginServlet</servlet-name>
+		<servlet-class>com.javawebtutor.controller.AdminLoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<display-name>DoctorLoginServlet</display-name>
+		<servlet-name>DoctorLoginServlet</servlet-name>
+		<servlet-class>com.javawebtutor.controller.DoctorLoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<display-name>RegisterServlet</display-name>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.javawebtutor.controller.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<display-name>DoctorUserIdCreationServlet</display-name>
+		<servlet-name>DoctorUserIdCreationServlet</servlet-name>
+		<servlet-class>com.javawebtutor.controller.DoctorUserIdCreationServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<display-name>PatientRegisterServlet</display-name>
+		<servlet-name>PatientRegisterServlet</servlet-name>
+		<servlet-class>com.javawebtutor.controller.PatientRegisterServlet</servlet-class>
+	</servlet>
+	
+	
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+		</servlet-mapping>
+		<servlet-mapping>
+		<servlet-name>PatientRegisterServlet</servlet-name>
+		<url-pattern>/PatientRegisterServlet</url-pattern>
+		</servlet-mapping>
+		<servlet-mapping>
+		<servlet-name>DoctorUserIdCreationServlet</servlet-name>
+		<url-pattern>/DoctorUserIdCreationServlet</url-pattern>
+		</servlet-mapping>
+		<servlet-mapping>
+		<servlet-name>AdminLoginServlet</servlet-name>
+		<url-pattern>/AdminLoginServlet</url-pattern>
+		</servlet-mapping>
+		<servlet-mapping>
+		<servlet-name>DoctorLoginServlet</servlet-name>
+		<url-pattern>/DoctorLoginServlet</url-pattern>
+		</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/RegisterServlet</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>Main_Page.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
